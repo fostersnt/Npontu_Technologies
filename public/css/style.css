@@ -1,0 +1,132 @@
+*{
+    font-family: 'Philosopher', sans-serif;
+}
+
+:root{
+    --theme-color: linear-gradient(100deg, orange, red);
+    --input-border-color: orangered;
+    --input-default-border-color: #D3D3D3;
+    --footer-bg: linear-gradient(orangered, black);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--theme-color); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+body{
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background: #F8F8F8;
+}
+.primary-btn{
+    background: var(--theme-color);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+#login-btn, #register-btn, #btn-activity, #add-user{
+    width: 300px;
+}
+.primary-input{
+    width: 300px;
+    border: 1px solid var(--input-default-border-color);
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+}
+.primary-input:focus{
+    border: 1px solid var(--input-border-color);
+    color: var(--input-border-color);
+}
+#forgot-password{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+#content{
+    min-height: 80vh;
+}
+.active{
+    color: orangered;
+}
+#login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+footer{
+    background: var(--footer-bg);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#register-form-container{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#register-form-container form{
+    padding: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+#create-activities{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#create-activities form{
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.dropdown-menu li a{
+    color: orangered;
+}
+
+#update-activity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#update-activity form{
+    padding: 20px;
+    border: 1px solid gray;
+}
